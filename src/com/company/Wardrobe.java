@@ -1,9 +1,9 @@
 package com.company;
 
 public class Wardrobe {
-    String color,material;
-    double height,width;
-    int numberOfDoors;
+    private String color,material;
+    private double height,width;
+    private int numberOfDoors;
 
     public Wardrobe(String color, double height, double width, int numberOfDoors,String material) {
         this.color = color;
@@ -16,7 +16,47 @@ public class Wardrobe {
 
     }
 
-    void properties(){
+    public String getColor() {
+        return color;
+    }
+
+    public void setColor(String color) {
+        this.color = color;
+    }
+
+    public String getMaterial() {
+        return material;
+    }
+
+    public void setMaterial(String material) {
+        this.material = material;
+    }
+
+    public double getHeight() {
+        return height;
+    }
+
+    public void setHeight(double height) {
+        this.height = height;
+    }
+
+    public double getWidth() {
+        return width;
+    }
+
+    public void setWidth(double width) {
+        this.width = width;
+    }
+
+    public int getNumberOfDoors() {
+        return numberOfDoors;
+    }
+
+    public void setNumberOfDoors(int numberOfDoors) {
+        this.numberOfDoors = numberOfDoors;
+    }
+
+    public void properties(){
         System.out.println("Color: " + color);
         System.out.println("Material: " + material);
         System.out.println("Size(height & width): " + height + "x" + width + "m");
@@ -24,7 +64,7 @@ public class Wardrobe {
         System.out.println("");
 
     }
-    String getName(){
+    public String getName(){
         return "Wardrobe";
     }
 }

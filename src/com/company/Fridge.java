@@ -1,8 +1,8 @@
 package com.company;
 
 public class Fridge {
-    String model,color;
-    double height, width;
+    private String model,color;
+    private double height, width;
 
     public Fridge(String model, String color, double height, double width) {
         this.model = model;
@@ -13,12 +13,45 @@ public class Fridge {
         System.out.println("");
 
     }
-    void properties(){
+
+    public String getModel() {
+        return model;
+    }
+
+    public String getColor() {
+        return color;
+    }
+
+    public double getHeight() {
+        return height;
+    }
+
+    public double getWidth() {
+        return width;
+    }
+
+    public void setModel(String model) {
+        this.model = model;
+    }
+
+    public void setColor(String color) {
+        this.color = color;
+    }
+
+    public void setHeight(double height) {
+        this.height = height;
+    }
+
+    public void setWidth(double width) {
+        this.width = width;
+    }
+
+    public void properties(){
         System.out.println("Color: " + color);
         System.out.println("Model: " + model);
         System.out.println("Size(height & width): " + height + "x" + width + "m");
     }
-    String getName(){
+    public String getName(){
         return "fridge";
     }
 }

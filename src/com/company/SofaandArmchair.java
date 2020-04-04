@@ -1,8 +1,8 @@
 package com.company;
 
 public class SofaandArmchair {
-    String color,modelName;
-    double sofaLength,sofaWidth,armchairLength,armchairWidth;
+    private String color,modelName;
+    private double sofaLength,sofaWidth,armchairLength,armchairWidth;
 
     public SofaandArmchair(String color, String modelName, double sofaLength, double sofaWidth, double armchairLength, double armchairWidth) {
         this.color = color;
@@ -15,7 +15,56 @@ public class SofaandArmchair {
         System.out.println("");
 
     }
-    void properties(){
+
+    public String getColor() {
+        return color;
+    }
+
+    public String getModelName() {
+        return modelName;
+    }
+
+    public double getSofaLength() {
+        return sofaLength;
+    }
+
+    public double getSofaWidth() {
+        return sofaWidth;
+    }
+
+    public double getArmchairLength() {
+        return armchairLength;
+    }
+
+    public double getArmchairWidth() {
+        return armchairWidth;
+    }
+
+    public void setColor(String color) {
+        this.color = color;
+    }
+
+    public void setModelName(String modelName) {
+        this.modelName = modelName;
+    }
+
+    public void setSofaLength(double sofaLength) {
+        this.sofaLength = sofaLength;
+    }
+
+    public void setSofaWidth(double sofaWidth) {
+        this.sofaWidth = sofaWidth;
+    }
+
+    public void setArmchairLength(double armchairLength) {
+        this.armchairLength = armchairLength;
+    }
+
+    public void setArmchairWidth(double armchairWidth) {
+        this.armchairWidth = armchairWidth;
+    }
+
+    public void properties(){
         System.out.println("Color: " + color);
         System.out.println("Model: " + modelName);
         System.out.println("Size of sofa (length & width): " + sofaLength + "x" + sofaWidth + "m");
@@ -23,7 +72,7 @@ public class SofaandArmchair {
         System.out.println("");
     }
 
-    String getName(){
+    public String getName(){
         return "Sofa and armchairs";
     }
 }
